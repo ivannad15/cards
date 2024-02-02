@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Class - Flashcards</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: fadeIn 2s ease-in-out; /* Animación al cargar la página */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 150px;
+            height: 200px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .question,
+        .answer {
+            padding: 20px;
+            text-align: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .answer {
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card:hover .question {
+            opacity: 0;
+        }
+
+        .card:hover .answer {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">
+    <h1>Curso de Inglés - Flashcards</h1>
+</div>
+
+<div class="container">
+    <!-- Tarjeta 1 -->
+    <div class="card">
+        <div class="question">¿Cómo se dice "hola" en inglés?</div>
+        <div class="answer">answer: Hello</div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card">
+        <div class="question">Traduce "adiós".</div>
+        <div class="answer">answer: Goodbye</div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card">
+        <div class="question">¿Qué significa "thank you"?</div>
+        <div class="answer">answer: Gracias</div>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card">
+        <div class="question">Traduce "casa".</div>
+        <div class="answer">answer: House</div>
+    </div>
+
+    <!-- Tarjeta 5 -->
+    <div class="card">
+        <div class="question">¿Cómo se dice "manzana" en inglés?</div>
+        <div class="answer">answer: Apple</div>
+    </div>
+
+    <!-- Tarjeta 6 -->
+    <div class="card">
+        <div class="question">Traduce "estudiar".</div>
+        <div class="answer">answer: Study</div>
+    </div>
+
+    <!-- Tarjeta 7 -->
+    <div class="card">
+        <div class="question">¿Cuál es el verbo para "comer"?</div>
+        <div class="answer">answer: Eat</div>
+    </div>
+
+    <!-- Tarjeta 8 -->
+    <div class="card">
+        <div class="question">Traduce "libro".</div>
+        <div class="answer">answer: Book</div>
+    </div>
+</div>
+
+</body>
+</html>
